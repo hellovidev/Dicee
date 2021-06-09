@@ -26,8 +26,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func rollClick(_ sender: UIButton) {
-        firstDice.image = array[Int.random(in: 0..<6)]
-        secondDice.image = array[Int.random(in: 0..<6)]
+        firstDice.image = array.randomElement()
+        secondDice.image = array[Int.random(in: 0...5)]
     }
     
 
